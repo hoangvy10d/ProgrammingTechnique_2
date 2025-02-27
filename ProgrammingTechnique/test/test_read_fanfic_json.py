@@ -1,5 +1,5 @@
-from libs.JsonFileFactory import JsonFileFactory
-from models.Fanfic import Fanfic
+from ProgrammingTechnique.libs.JsonFileFactory import JsonFileFactory
+from ProgrammingTechnique.models.Fanfic import Fanfic
 
 jff=JsonFileFactory()
 filename="../dataset/fanfic.json"
