@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\KTLT\ProgrammingTechnique\MARIN_CORNER_2\UserRead2_1\MainWindowuserreadnew.ui'
+# Form implementation generated from reading ui file 'D:\KTLT\ProgrammingTechnique\MARIN_CORNER_2\UserRead2_1\UserReadReview.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
