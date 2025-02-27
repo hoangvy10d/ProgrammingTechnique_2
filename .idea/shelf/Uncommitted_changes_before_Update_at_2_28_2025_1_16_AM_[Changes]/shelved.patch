@@ -1,0 +1,82 @@
+Index: ProgrammingTechnique/libs/DataConnector.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from libs.JsonFileFactory import JsonFileFactory\r\n\r\n\r\nclass DataConnector:\r\n    def get_all_fanfic(self):\r\n        jff = JsonFileFactory()\r\n        filename = \"../dataset/Fanfic.json\"\r\n        Fanfic=jff.read_data(filename,Fanfic)\r\n        return Fanfic\r\n    def get_all_user(self):\r\n        jff = JsonFileFactory()\r\n        filename = \"../dataset/assets.json\"\r\n        assets = jff.read_data(filename, Asset)\r\n        return assets\r\n    def get_all_manager(self):\r\n        jff = JsonFileFactory()\r\n        filename = \"../dataset/employee_assets.json\"\r\n        eas = jff.read_data(filename, Employee_Asset)\r\n        return eas\r\n\r\n    def login(self,username,password):\r\n        employees=self.get_all_employees()\r\n        for e in employees:\r\n            if e.UserName==username and e.Password==password:\r\n                return e\r\n        return None
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProgrammingTechnique/libs/DataConnector.py b/ProgrammingTechnique/libs/DataConnector.py
+--- a/ProgrammingTechnique/libs/DataConnector.py	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
++++ b/ProgrammingTechnique/libs/DataConnector.py	(date 1740680137773)
+@@ -1,4 +1,4 @@
+-from libs.JsonFileFactory import JsonFileFactory
++from ProgrammingTechnique.libs.JsonFileFactory import JsonFileFactory
+ 
+ 
+ class DataConnector:
+Index: ProgrammingTechnique/.idea/misc.xml
+===================================================================
+diff --git a/ProgrammingTechnique/.idea/misc.xml b/ProgrammingTechnique/.idea/misc.xml
+deleted file mode 100644
+--- a/ProgrammingTechnique/.idea/misc.xml	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
++++ /dev/null	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
+@@ -1,4 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (pythonProject)" project-jdk-type="Python SDK" />
+-</project>
+\ No newline at end of file
+Index: ProgrammingTechnique/.idea/modules.xml
+===================================================================
+diff --git a/ProgrammingTechnique/.idea/modules.xml b/ProgrammingTechnique/.idea/modules.xml
+deleted file mode 100644
+--- a/ProgrammingTechnique/.idea/modules.xml	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
++++ /dev/null	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/ProgrammingTechnique.iml" filepath="$PROJECT_DIR$/.idea/ProgrammingTechnique.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ProgrammingTechnique/.idea/.gitignore
+===================================================================
+diff --git a/ProgrammingTechnique/.idea/.gitignore b/ProgrammingTechnique/.idea/.gitignore
+deleted file mode 100644
+--- a/ProgrammingTechnique/.idea/.gitignore	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
++++ /dev/null	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: ProgrammingTechnique/.idea/inspectionProfiles/profiles_settings.xml
+===================================================================
+diff --git a/ProgrammingTechnique/.idea/inspectionProfiles/profiles_settings.xml b/ProgrammingTechnique/.idea/inspectionProfiles/profiles_settings.xml
+deleted file mode 100644
+--- a/ProgrammingTechnique/.idea/inspectionProfiles/profiles_settings.xml	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
++++ /dev/null	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
+@@ -1,6 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="USE_PROJECT_PROFILE" value="false" />
+-    <version value="1.0" />
+-  </settings>
+-</component>
+\ No newline at end of file
+Index: ProgrammingTechnique/.idea/vcs.xml
+===================================================================
+diff --git a/ProgrammingTechnique/.idea/vcs.xml b/ProgrammingTechnique/.idea/vcs.xml
+deleted file mode 100644
+--- a/ProgrammingTechnique/.idea/vcs.xml	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
++++ /dev/null	(revision f9175d74c6b59a4b405a78f6ae69c0f9f7d027f9)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
