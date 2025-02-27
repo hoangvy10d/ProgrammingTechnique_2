@@ -30,3 +30,10 @@ class DataConnector:
             if u.UserName==username and u.Password==password:
                 return u
         return None
+
+    def check_existing_user(self, users, userid):
+        for i in range(len(users)):
+            user = users[i]
+            if user.userid == userid:
+                return i
+        return -1
