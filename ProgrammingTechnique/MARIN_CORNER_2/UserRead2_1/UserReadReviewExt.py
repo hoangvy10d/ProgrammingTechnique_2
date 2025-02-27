@@ -1,7 +1,7 @@
 from PyQt6.QtGui import QStandardItemModel, QStandardItem
 from PyQt6.QtWidgets import QInputDialog, QMessageBox
 
-from FINALEXAM.readofuserandreviewmana.UI.MainWindowuserreadnew import Ui_MainWindow
+from ProgrammingTechnique.MARIN_CORNER_2.UserRead2_1.UserReadReview import Ui_MainWindow
 
 
 class MainwindowExt(Ui_MainWindow):
